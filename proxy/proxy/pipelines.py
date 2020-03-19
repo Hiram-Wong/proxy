@@ -19,10 +19,13 @@ class ProxyPipeline(object):
             name = item['name']
             ip = item['ip'][i]
             port = item['port'][i]
-            property = item['protocol'][i]
+            if name =='66代理':
+                protocol = item['protocol']
+            else:
+                protocol = item['protocol'][i]
             anonymity = item['anonymity'][i]
             area = item['area'][i]
-            sql = "insert into proxy(name,ip,port,property,anonymity,area) values ('"+name+"','"+ip+"','"+port+"','"+property+"','"+anonymity+"','"+area+"')"
+            sql = "insert into proxy(name,ip,port,property,protocol,area) values ('"+name+"','"+ip+"','"+port+"','"+protocol+"','"+anonymity+"','"+area+"')"
             print(sql)
             conn.query(sql)
             conn.commit()

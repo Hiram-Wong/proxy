@@ -104,20 +104,3 @@ class ProxyDownloaderMiddleware(object):
         spider.logger.info('Spider opened: %s' % spider.name)
 
 
-class UserAgentMiddleware(object):
-    def __init__(self):
-        self.user_agent_list = [
-            'MSIE (MSIE 6.0; X11; Linux; i686) Opera 7.23',
-            'Opera/9.20 (Macintosh; Intel Mac OS X; U; en)',
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36 Edg/80.0.361.54',
-            'iTunes/9.0.3 (Macintosh; U; Intel Mac OS X 10_6_2; en-ca)',
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36',
-            'iTunes/4.2 (Macintosh; U; PPC Mac OS X 10.2)',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:5.0) Gecko/20100101 Firefox/5.0',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:9.0) Gecko/20100101 Firefox/9.0',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20120813 Firefox/16.0',
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.106 Safari/537.36 Edg/80.0.361.54',
-            'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:21.0) Gecko/20100101 Firefox/21.0'
-        ]
-    def process_request(self,request,spider):
-        request.headers['USER_AGENT']=random.choice(self.user_agent_list)

@@ -23,7 +23,7 @@ class GaokeyongdailiSpider(scrapy.Spider):
         yield data
         # print(data['name'], data['ip'], data['port'], data['protocol'], data['anonymity'], data['area'],res_page)
 
-        for i in range(2, 13):
+        for i in range(2, 8):
             url = 'https://ip.jiangxianli.com/?page={}'.format(i)
             # print(url)
             yield Request(url, callback=self.parse)
