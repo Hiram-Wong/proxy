@@ -15,7 +15,7 @@ Spracy框架
 |齐云代理     |✔   |慢   |未检测   |✘   |https://www.7yip.cn/free/   |✔   |
 |IP海         |✘   |快   |未检测   |✘   |http://www.iphai.com/   |✘   |
 |高可用代理    |✔   |快   |未检测   |✘   |https://ip.jiangxianli.com/   |✔   |
-|中国IP地址    |✔   |快   |未检测   |✘   |http://cn-proxy.com/   |✘   |
+|中国IP地址    |✔   |快   |未检测   |✔   |http://cn-proxy.com/   |✘   |
 |Proxy List   |✔   |快   |未检测   |✔   |https://proxy-list.org/chinese/index.php   |✘   |
 |ProxyList+   |✔   |快   |未检测   |✘   |https://list.proxylistplus.com/Fresh-HTTP-Proxy-List-1   |✘   |
 |Sockslist    |✔   |快   |未检测   |✘   |https://sockslist.net/list/proxy-socks-5-list/   |✘   |
